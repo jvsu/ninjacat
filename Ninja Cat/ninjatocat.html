@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>Ninja to Cat</title>
+	<script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+	<script>
+		$(document).ready(function(){
+			$('img').click(function(){
+				var aux = $(this).attr('data-alt-src');
+				var source =$(this).attr('src');
+				$(this).attr('src',aux);
+				$(this).click(function(){
+					$(this).attr('src',source);
+				})
+			})
+		})
+	</script>
+</head>
+<body>
+	<div id='ear'>
+		<img src='ninja0.png' data-alt-src='cat0.png'/>
+	</div>
+	<div id='eyes'>
+		<img src='ninja1.png' data-alt-src='cat1.png'/>
+	</div>
+	<div id='neck'>
+		<img src='ninja2.png' data-alt-src='cat2.png'/>
+	</div>
+	<div id='chest'>
+		<img src='ninja3.png' data-alt-src='cat3.png'/>
+	</div>
+	<div id='feet'>
+		<img src='ninja4.png' data-alt-src='cat4.png'/>
+	</div>
+
+
+</body>
+</html>
